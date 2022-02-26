@@ -1,0 +1,22 @@
+﻿<Window x:Class="MorrowindWPFLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Icon="Jeu.ico"
+        Title="Lanceur Morrowind" Name="RootWindow"
+        WindowStartupLocation="CenterScreen"
+        Height="480" Width="640">
+    <Grid DataContext="{Binding ElementName=RootWindow}">
+        <Image Source="Background.png" Stretch="Fill" />
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Jouer" Margin="0,0,0,10" Command="{Binding Jouer}" ToolTip="Oh Oui !" />
+            <Button Content="Options:Graphiques" Command="{Binding Mgexegui}" ToolTip="Résolution, Shaders, ..." />
+            <Button Content="Options:Overhaul" Command="{Binding Mgso_Options}" ToolTip="Ajouts graphiques, style interface, ..." />
+            <Button Content="Options:Patchs" Command="{Binding Morrowind_Code_Patch}" ToolTip="Activer/désactiver des corrections telles que la corrélation des dégâts à mains nues avec la force" />
+            <Button Content="Restaurer:Patchs" Command="{Binding Reset_Morrowind_Code_Patch}" ToolTip="Remettre l'ensemble des corrections recommandées" />
+            <Button Content="Gestionnaire:Mods" Command="{Binding ModManager}" ToolTip="Activer/désactiver des 'plugins' tels que le mod 'Run Faster'" />
+            <Button Content="Quitter" Margin="0,10,0,0" Command="{Binding Quitter}" ToolTip="Snif :'(" />
+        </StackPanel>
+    </Grid>
+</Window>

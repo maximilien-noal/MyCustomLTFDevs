@@ -1,0 +1,27 @@
+﻿<Window x:Class="DrakanLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrakanLauncher"
+        mc:Ignorable="d" Name="RootWindow" ResizeMode="NoResize"
+        Title="Lanceur Drakan" Height="600" Width="744" WindowStartupLocation="CenterScreen" Icon="Jeu.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <BooleanToVisibilityConverter x:Key="LocalBooleanToVisibilityConverter" />
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid DataContext="{Binding ElementName=RootWindow}">
+        <Image Source="Background.png" Stretch="Fill" />
+        <StackPanel Margin="82,176,0,0" HorizontalAlignment="Left">
+            <Button Content="Lancer Drakan" Command="{Binding LaunchGame}" Background="Transparent" Foreground="White" FontSize="24" HorizontalContentAlignment="Left" />
+            <Button Content="Voir les commandes clavier/souris par défaut" Command="{Binding ShowDefaultCommands}" Background="Transparent" Foreground="White" FontSize="24" HorizontalContentAlignment="Left" />
+            <Rectangle Fill="White" Height="4" Opacity="0.5" Margin="0,20,0,0" />
+            <Button Content="Options graphiques (utilisateurs expérimentés)" Command="{Binding RiotEngineSetup}" Background="Transparent" Foreground="White" FontSize="24" HorizontalContentAlignment="Left" />
+            <Button Content="Options dgVoodoo2 (utilisateurs expérimentés)" Command="{Binding DgVoodooSetup}" Visibility="{Binding CanLaunchDgVoodoo, Converter={StaticResource LocalBooleanToVisibilityConverter}}" Background="Transparent" Foreground="White" FontSize="24" HorizontalContentAlignment="Left" />
+            <Button Content="Voir les fichiers du jeu (utilisateurs expérimentés)" Command="{Binding ShowGameFiles}" Background="Transparent" Foreground="White" FontSize="24" HorizontalContentAlignment="Left" />
+            <Rectangle Fill="White" Height="4" Opacity="0.5" Margin="0,20,0,0" />
+            <Button Content="Quitter" Command="{Binding ExitLauncher}" Background="Transparent" Foreground="White" FontSize="24" HorizontalContentAlignment="Left" />
+        </StackPanel>
+    </Grid>
+</Window>

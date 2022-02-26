@@ -1,0 +1,20 @@
+﻿<Window x:Class="ResidentEvil3Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ResidentEvil3Launcher"
+        mc:Ignorable="d"
+        Icon="Launcher.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="Resident Evil 3 Launcher" Width="700" Height="480" Name="LauncherWindow">
+    <Grid>
+        <Image Source="Resources\background.png" Stretch="Fill" />
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,54,0">
+            <Button Content="Lancer Resident Evil 3" Command="{Binding LaunchCommand, ElementName=LauncherWindow}" />
+            <Button Content="Lancer THE MERCENARIES" Command="{Binding MercenariesCommand, ElementName=LauncherWindow}" />
+            <Button Content="Réglages vidéo" Command="{Binding ReglagesCommand, ElementName=LauncherWindow}" />
+            <Button Content="Voir les contrôles clavier et manette par défaut" Command="{Binding ControlsCommand, ElementName=LauncherWindow}" />
+            <Button Content="Quitter" Command="{Binding QuitterCommand, ElementName=LauncherWindow}" />
+        </StackPanel>
+    </Grid>
+</Window>

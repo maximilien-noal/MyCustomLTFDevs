@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESIDENT EVIL 2 LAUNCHER", "RESIDENT EVIL 2 LAUNCHER\RESIDENT EVIL 2 LAUNCHER.csproj", "{910CF996-43A7-4C7C-A170-9BA2E9298352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RE2LaunchLib", "RE2LaunchLib\RE2LaunchLib.csproj", "{30FC9873-721F-41F9-B9A7-07D63ADF9037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RE2HookInjector", "RE2HookInjector\RE2HookInjector.csproj", "{DBD5BB7A-C818-477C-9554-3E05915AC9D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModificateurOptionsResidentEvil2", "ModificateurOptionsResidentEvil2\ModificateurOptionsResidentEvil2.csproj", "{2CCC24A2-9F3C-43E4-816E-2BDFAAF674AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{910CF996-43A7-4C7C-A170-9BA2E9298352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{910CF996-43A7-4C7C-A170-9BA2E9298352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{910CF996-43A7-4C7C-A170-9BA2E9298352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{910CF996-43A7-4C7C-A170-9BA2E9298352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30FC9873-721F-41F9-B9A7-07D63ADF9037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FC9873-721F-41F9-B9A7-07D63ADF9037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FC9873-721F-41F9-B9A7-07D63ADF9037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FC9873-721F-41F9-B9A7-07D63ADF9037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD5BB7A-C818-477C-9554-3E05915AC9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD5BB7A-C818-477C-9554-3E05915AC9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD5BB7A-C818-477C-9554-3E05915AC9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD5BB7A-C818-477C-9554-3E05915AC9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CCC24A2-9F3C-43E4-816E-2BDFAAF674AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CCC24A2-9F3C-43E4-816E-2BDFAAF674AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CCC24A2-9F3C-43E4-816E-2BDFAAF674AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CCC24A2-9F3C-43E4-816E-2BDFAAF674AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

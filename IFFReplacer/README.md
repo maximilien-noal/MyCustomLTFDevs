@@ -1,0 +1,1 @@
+This program helped me import missions French voice lines into data files for the Wing Commander IV DVD VF patch.
